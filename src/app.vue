@@ -24,9 +24,10 @@ export default defineComponent({
   <!--  <HelloWorld />-->
   <div>
     Selected box: {{ selected }}
-    <vue-cool-box-selector v-model="selected" active-class="bg-info text-dark">
-      <cool-box-item class="something" name="Tab1">Hello From Tab 1</cool-box-item>
-      <cool-box-item class="something" name="Tab2">Hello From Tab 2</cool-box-item>
+    <vue-cool-box-selector v-model="selected" active-class="" ta2g="">
+      <cool-box-item class="something" name="Tab1" key="1" ta2g="">Hello From Tab 1</cool-box-item>
+      <cool-box-item class="something" name="Tab2" key="2" ta2g="">Hello From Tab 2</cool-box-item>
+      <cool-box-item class="something" tag="li" name="">Hello From </cool-box-item>
       <!--    &lt;!&ndash;  -->
     </vue-cool-box-selector>
   </div>
