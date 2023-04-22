@@ -1,22 +1,23 @@
 {
-  "name": "@logustra/vivu-npm",
-  "version": "0.1.7",
-  "description": "Starter template to build component library for vue.js 2-3",
-  "author": "Faizal Andyka",
+  "name": "vue-cool-box-selector",
+  "version": "0.1.0",
+  "description": "Fancy, versatile box selector for Vue",
+  "author": "Hassan Jahan",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/logustra/vivu-npm"
+    "url": "https://github.com/hassan-jahan/vue-cool-box-selector"
   },
-  "bugs": "https://github.com/logustra/vivu-npm/issues",
+  "bugs": "https://github.com/hassan-jahan/vue-cool-box-selector/issues",
   "keywords": [
-    "starter",
-    "boilerplate",
-    "vue",
-    "vue3",
-    "component",
+    "cool-box-selector",
+    "button-select",
+    "box-select",
+    "box-option",
+    "choose-box",
     "ui",
-    "frontend"
+    "frontend",
+    "vue"
   ],
   "exports": {
     ".": {

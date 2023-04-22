@@ -1,8 +1,8 @@
-import { resolve } from 'path'
-import { defineConfig } from 'vite'
+import {resolve} from 'path'
+import {defineConfig} from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-export default defineConfig(({ mode }) => {
+export default defineConfig(({mode}) => {
   const isProd = mode === 'prod'
   const isDev = mode === 'dev'
   const isTest = mode === 'test'
@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
     build = {
       lib: {
         entry: resolve(__dirname, 'src/index.ts'),
-        name: 'vivu-npm',
+        name: 'vue-cool-box-selector',
         fileName: 'index',
         formats: ['es', 'cjs', 'umd'],
       },
