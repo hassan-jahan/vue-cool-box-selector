@@ -4,6 +4,11 @@ import {defineComponent} from 'vue'
 import VueCoolBoxSelector from './components/vue-cool-box-selector.vue'
 import CoolBoxItem from './components/cool-box-item.vue'
 
+//todo: fully vue 2 test
+//todo: grid cooler samples
+//todo: read me with gifs and examples and emoji and vue 2 / vue 3
+//todo: github hooks
+//todo: publish v1
 
 export default defineComponent({
   name: 'App',
