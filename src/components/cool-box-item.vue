@@ -1,17 +1,11 @@
-<template>
-  <component :is="tag" :class="$parent.selected === name ? activeClass : ''" @click='$parent.Select(name)'>
-    <slot></slot>
-  </component>
-</template>
-
 <script>
 export default {
-  name: 'cool-box-item',
+  name: 'CoolBoxItem',
   props: {
-    'name': {
-      required: true
+    name: {
+      required: true,
     },
-    'tag': {
+    tag: {
       type: String,
       default: 'div',
     },
@@ -22,9 +16,9 @@ export default {
     }
   },
   computed: {
-    activeClass(){
+    activeClass() {
       return this.$parent.activeClass || 'vue-cool-box-selector__active'
-    }
+    },
   },
 
   created() {
@@ -33,6 +27,12 @@ export default {
     // Select(){
     //     this.$parent.selected=this.name
     // }
-  }
+  },
 }
 </script>
+
+<template>
+  <component :is="tag" :class="$parent.selected === name ? activeClass : ''" @click="$parent.Select(name)">
+    <slot />
+  </component>
+</template>
