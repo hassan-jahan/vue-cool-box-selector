@@ -26,7 +26,7 @@ export default defineComponent({
   },
   data() {
     return {
-      selected: 'initialValue',
+      selected: 'initial',
     }
   },
   // data:{
