@@ -10,5 +10,5 @@ Vue.config.productionTip = false
 // "@vitejs/plugin-vue": "^3.2.0",
 
 new Vue({
-    render: h => h(App),
+  render: h => h(App),
 }).$mount('#app')

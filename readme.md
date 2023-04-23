@@ -1,108 +1,103 @@
-## Vivu NPM
-[![License](https://img.shields.io/github/license/logustra/vivu-npm)](https://github.com/logustra/vivu-npm/blob/master/license.md)
+## Vue Cool Box Selector 🪄
+[![License](https://img.shields.io/github/license/logustra/vivu-npm)](https://github.com/hassan-jahan/vue-cool-box-selector/blob/master/license.md)
 [![Code Style](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![Commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli)
 
-> Starter template to build component library for vue.js 2-3
+[//]: # ([![Commitizen]&#40;https://img.shields.io/badge/commitizen-friendly-brightgreen.svg&#41;]&#40;http://commitizen.github.io/cz-cli&#41;)
+
+[//]: # (> [Demo →]&#40;https://stackblitz.com/edit/vitejs-vite-e7qhxx?file=src%2FApp.vue&#41;)
+
+Versatile element selector for vue 
 
 ## Features
-- Faster by default: [vite](https://github.com/vitejs/vite), [vue](https://github.com/vuejs/vue-next), [pnpm](https://github.com/pnpm/pnpm), [esbuild](https://github.com/evanw/esbuild)
-- Typescript, of course
-- Testing: [vitest](https://vitest.dev/)
-- Git custom hooks: [husky](https://github.com/typicode/husky)
-- Commit conventions: [commitizen](https://github.com/commitizen/cz-cli)
-- Linters: [commitlint](https://github.com/conventional-changelog/commitlint), [eslint](https://github.com/eslint/eslint), [@antfu/eslint-config](https://github.com/antfu/eslint-config)
-- CI/CD: [github actions](https://github.com/features/actions)
+- Flexible, choose from any element (division, button, image or custom component)
+- Style-free, use our optional provided style or your own classes
+- Works with Vue 2 and 3
+- Lightweight ~1KB gzipped
 
 ## Requirement
-  - [node.js](http://nodejs.org/)
-  - [volta](https://docs.volta.sh/guide/getting-started)
-  - [pnpm](https://pnpm.js.org/en/installation)
-  - [encrypted secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
+  - [node.js ](http://nodejs.org/) > 14
 
-## Getting Started
-### GitHub Template
+[//]: # (  - [pnpm]&#40;https://pnpm.js.org/en/installation&#41;)
 
-[Create a repo from this template on GitHub](https://github.com/logustra/vivu-npm/generate).
 
-### Clone to local
-If you prefer to do it manually with the cleaner git history
+[//]: # (## tag git history)
 
-```bash
-# clone repository
-$ git clone https://github.com/logustra/vivu-npm.git
+[//]: # (#$ git tag v0.0.1 -m 'v0.0.1')
 
-# open folder vivu-npm
-$ cd vivu-npm
+[//]: # (#)
 
-# install packages
-$ pnpm install
+[//]: # (## push tag to git)
 
-# build and serve with vite dev server
-$ pnpm dev
-```
+[//]: # (#$ git push origin --tags)
 
-## Checklist
-When you use this template, try follow the checklist to update your info properly
-
-- [ ] Change `name, description, repository, bugs` field in `package.json`
-- [ ] Change the author name in `LICENSE`
-- [ ] Change the lib name in `vite.config.ts`
-- [ ] Change the favicon in `public`
-- [ ] Remove the `.github` folder which contains the funding info
-- [ ] Clean up the README(s) and remove modules
-
-And, enjoy :)
-
-## Publish to NPM
-Make sure you have added the `GIT_TOKEN` and `NPM_TOKEN` encrypted secrets
-
-```bash
-# tag git history
-$ git tag v0.0.1 -m 'v0.0.1'
-
-# push tag to git
-$ git push origin --tags
-```
 
 ## Usage
 ### Setup
-Vue 3
-```js
-import { createApp } from 'vue'
-import HelloWorld from '@logustra/vivu-npm'
-import App from './app.vue'
-
-const app = createApp(App)
-app.use(HelloWorld)
+```bash
+npm install vue-cool-box-selector
+##OR
+yarn add vue-cool-box-selector
+##OR
+pnpm add vue-cool-box-selector
 ```
 
-Vue 2
-```js
-import Vue from 'vue'
-import CompositionAPI from '@vue/composition-api'
-import HelloWorld from '@logustra/vivu-npm'
 
-Vue.use(CompositionAPI)
-Vue.use(HelloWorld)
+```js
+import { CoolBoxItem, VueCoolBoxSelector } from 'vue-cool-box-selector'
+
+// Optional, you can use your own classes
+import 'vue-cool-box-selector/style.css'
+
+// For Vue 2
+import Vue from 'vue'
+
+Vue.use(CoolBoxItem)
+Vue.use(VueCoolBoxSelector)
+
+// or Vue 3
+app.use(CoolBoxItem)
+app.use(VueCoolBoxSelector)
 ```
 
 ### Basic Usage
 ```html
-<template>
-  <hello-world />
-</template>
+<div>
+  Selected box: {{ selected }}
+  
+  <VueCoolBoxSelector v-model="selected" active-class="vue-cool-box-selector__active">
+    
+    <CoolBoxItem key="1" class="vue-cool-box-selector__item" name="Item1">
+      Item Box 1
+    </CoolBoxItem>
+    <CoolBoxItem key="2" class="vue-cool-box-selector__item" name="Item2">
+      Item Box 2
+    </CoolBoxItem>
+    <CoolBoxItem key="3" class="vue-cool-box-selector__item" name="Item3">
+      Item Box 3
+    </CoolBoxItem>
+
+  </VueCoolBoxSelector>
+</div>
 ```
-[Demo →](https://stackblitz.com/edit/vitejs-vite-e7qhxx?file=src%2FApp.vue)
+## Props
+
+- VueCoolBoxSelector 
+  - active-class (String): Will be added when the box was selected
+  - tag (String) (Default: 'div')
+
+- CoolBoxItem
+  - name (String) (Required)
+  - tag (String) (Default: 'div')
 
 ## Cheers me on
-Love my works? give me 🌟 or cheers me on here 😆 <br>
+Love my works? give me 🌟 or cheers me on here :) <br>
 Your support means a lot to me. It will help me sustain my projects actively and make more of my ideas come true. <br>
 Much appreciated! ❤️ 🙏
+→ [Github](https://github.com/sponsors/hassan-jahan)<br>
 
-&nbsp; &nbsp; 🐙 [Github](https://github.com/sponsors/logustra)<br>
-&nbsp; &nbsp; 🌍 [Ko-Fi](https://ko-fi.com/logustra)<br>
-&nbsp; &nbsp; 🇮🇩 [Trakteer](https://trakteer.id/logustra/tip)<br>
+## Thanks
+- Faizal Andyka for vivu-npm
+- Anthony Fu for vue-demi
 
 ## License
-MIT License © 2022 Faizal Andyka
+MIT License © 2023 Hassan Jahan

@@ -1,5 +1,5 @@
 <script>
-import {isVue2} from 'vue-demi'
+import { isVue2 } from 'vue-demi'
 
 export default {
   name: 'VueCoolBoxSelector',
@@ -8,7 +8,7 @@ export default {
     modelValue: {},
     activeClass: {
       type: String,
-      // default: 'vue-cool-box-selector__active', //doesn't work
+      // default: 'vue-cool-box-selector__active', //doesn't work // not needed
     },
     tag: {
       type: String,
@@ -45,14 +45,10 @@ export default {
 
 <template>
   <component :is="tag">
-    <slot/>
+    <slot />
   </component>
 </template>
 
 <style>
-.vue-cool-box-selector__active {
-  border: 1px solid #2c3ab6;
-  /*padding: .5rem;*/
-  border-radius: 0.3rem;
-}
+
 </style>
