@@ -1,8 +1,8 @@
 <script lang="ts">
-import { defineComponent } from 'vue-demi'
+import {defineComponent} from 'vue-demi'
 
 // import HelloWorld from './helloWorld.vue'
-import { CoolBoxItem, VueCoolBoxSelector } from './index'
+import {CoolBoxItem, VueCoolBoxSelector} from './index'
 // import CoolBoxItem from './components/cool-box-item.vue'
 
 // todo: fully vue 2 test X
@@ -15,6 +15,7 @@ import { CoolBoxItem, VueCoolBoxSelector } from './index'
 // todo: publish v1
 // todo: test with vue 2 vue 3
 // todo: multi select
+// todo: checkbox style
 
 export default defineComponent({
   name: 'App',
@@ -35,17 +36,16 @@ export default defineComponent({
 </script>
 
 <template>
-  <!--  <HelloWorld /> s -->
   <div>
     Selected box: {{ selected }}
     <VueCoolBoxSelector v-model="selected" active-class="vue-cool-box-selector__active">
-      <CoolBoxItem key="1" class="vue-cool-box-selector__item" name="Item1">
+      <CoolBoxItem key="1" name="Item1" class="vue-cool-box-selector__item">
         Item Box 1
       </CoolBoxItem>
-      <CoolBoxItem key="2" class="vue-cool-box-selector__item" name="Item2">
+      <CoolBoxItem key="2" name="Item2" class="vue-cool-box-selector__item">
         Item Box 2
       </CoolBoxItem>
-      <CoolBoxItem key="3" class="vue-cool-box-selector__item" name="Item3">
+      <CoolBoxItem key="3" name="Item3" class="vue-cool-box-selector__item">
         Item Box 3
       </CoolBoxItem>
     </VueCoolBoxSelector>

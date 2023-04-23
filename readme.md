@@ -1,6 +1,7 @@
-## Vue Cool Box Selector 🪄
 [![License](https://img.shields.io/github/license/logustra/vivu-npm)](https://github.com/hassan-jahan/vue-cool-box-selector/blob/master/license.md)
 [![Code Style](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+## Vue Cool Box Selector 🪄✨
 
 [//]: # ([![Commitizen]&#40;https://img.shields.io/badge/commitizen-friendly-brightgreen.svg&#41;]&#40;http://commitizen.github.io/cz-cli&#41;)
 
@@ -61,21 +62,19 @@ app.use(VueCoolBoxSelector)
 
 ### Basic Usage
 ```html
+
 <div>
   Selected box: {{ selected }}
-  
   <VueCoolBoxSelector v-model="selected" active-class="vue-cool-box-selector__active">
-    
-    <CoolBoxItem key="1" class="vue-cool-box-selector__item" name="Item1">
+    <CoolBoxItem name="Item1" class="vue-cool-box-selector__item" key="1">
       Item Box 1
     </CoolBoxItem>
-    <CoolBoxItem key="2" class="vue-cool-box-selector__item" name="Item2">
+    <CoolBoxItem name="Item2" class="vue-cool-box-selector__item" key="2">
       Item Box 2
     </CoolBoxItem>
-    <CoolBoxItem key="3" class="vue-cool-box-selector__item" name="Item3">
+    <CoolBoxItem name="Item3" class="vue-cool-box-selector__item" key="3">
       Item Box 3
     </CoolBoxItem>
-
   </VueCoolBoxSelector>
 </div>
 ```
