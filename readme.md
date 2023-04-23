@@ -88,11 +88,15 @@ app.use(VueCoolBoxSelector)
   - name (String) (Required)
   - tag (String) (Default: 'div')
 
-## Cheers me on
-Love my works? give me 🌟 or cheers me on here :) <br>
-Your support means a lot to me. It will help me sustain my projects actively and make more of my ideas come true. <br>
-Much appreciated! ❤️ 🙏
-→ [Github](https://github.com/sponsors/hassan-jahan)<br>
+[//]: # (## Cheers me on)
+
+[//]: # (Love my works? give me 🌟 or cheers me on here :&#41; <br>)
+
+[//]: # (Your support means a lot to me. It will help me sustain my projects actively and make more of my ideas come true. <br>)
+
+[//]: # (Much appreciated! ❤️ 🙏)
+
+[//]: # (→ [Github]&#40;https://github.com/sponsors/hassan-jahan&#41;<br>)
 
 ## Thanks
 - Faizal Andyka for vivu-npm

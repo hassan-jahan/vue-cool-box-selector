@@ -36,7 +36,6 @@
   ],
   "scripts": {
     "prepare": "pnpm lint:fix",
-    "prepare-husky": "husky install",
     "clean:dist": "rimraf dist",
     "clean:coverage": "rimraf coverage",
     "dev": "vite --mode dev",
