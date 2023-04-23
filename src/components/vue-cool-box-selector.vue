@@ -1,5 +1,5 @@
 <script>
-// import { Vue2, Vue3 } from 'vue-demi'
+import {isVue2} from 'vue-demi'
 
 export default {
   name: 'VueCoolBoxSelector',
@@ -22,24 +22,22 @@ export default {
     }
   },
   created() {
-    this.selected = this.value
-    this.selected = this.modelValue
-
-    // if (Vue2)
-    //   alert('this is vue2')
-    //
-    // if (Vue3)
-    //   alert('this is vue3')
+    if (isVue2)
+      this.selected = this.value
+    else
+      this.selected = this.modelValue
   },
   mounted() {
-    // this.selectTab(0)
+    // this.selectTab(0),
   },
   methods: {
     Select(name) {
       this.selected = (this.selected !== name) ? name : '' // unselect
 
-      this.$emit('input', name)
-      this.$emit('update:modelValue', name) // vue 3
+      if (isVue2)
+        this.$emit('input', name)
+      else
+        this.$emit('update:modelValue', name) // vue 3
     },
   },
 }
@@ -47,13 +45,13 @@ export default {
 
 <template>
   <component :is="tag">
-    <slot />
+    <slot/>
   </component>
 </template>
 
 <style>
 .vue-cool-box-selector__active {
-  border: 2px solid #2c3ab6;
+  border: 1px solid #2c3ab6;
   /*padding: .5rem;*/
   border-radius: 0.3rem;
 }

@@ -13,7 +13,7 @@ module.exports = {
         'dist/',
         'coverage/',
         'pnpm-lock.yaml',
-        '*.js'
+        //'*.js'
     ],
     rules: {
         // "object-curly-spacing": ['off'],
