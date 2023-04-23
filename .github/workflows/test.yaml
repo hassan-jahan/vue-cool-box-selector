@@ -11,7 +11,10 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        node-version: [ 18 ]
 
     steps:
       - name: Checkout
@@ -19,6 +22,12 @@ jobs:
 
       - name: Setup volta
         uses: volta-cli/action@v3
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2.1.0
