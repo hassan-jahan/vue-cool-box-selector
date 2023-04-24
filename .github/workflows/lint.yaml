@@ -22,16 +22,18 @@ jobs:
       - name: Setup volta
         uses: volta-cli/action@v3
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: latest
+
 
 
       - name: Install dependencies
