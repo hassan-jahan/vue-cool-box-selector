@@ -1,9 +1,4 @@
 <script>
-import {install, isVue2} from 'vue-demi'
-
-install()
-// console.log('isVue2',isVue2)
-
 export default {
   name: 'VueCoolBoxSelector',
   props: {
@@ -25,10 +20,7 @@ export default {
     }
   },
   created() {
-    if (isVue2)
-      this.selected = this.value
-    else
-      this.selected = this.modelValue
+    this.selected = this.value ? this.value : this.modelValue
   },
   mounted() {
     // this.selectTab(0),
@@ -37,10 +29,8 @@ export default {
     Select(name) {
       this.selected = (this.selected !== name) ? name : '' // unselect
 
-      if (isVue2)
-        this.$emit('input', name)
-      else
-        this.$emit('update:modelValue', name) // vue 3
+      this.$emit('input', name)
+      this.$emit('update:modelValue', name) // vue 3
     },
   },
 }

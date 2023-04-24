@@ -48,7 +48,7 @@ export default defineConfig(({ mode }) => {
          * dependency pre-bundling
          */
     optimizeDeps = {
-      exclude: ['vue-demi'],
+      // exclude: ['vue-demi'],
     }
   }
 
@@ -64,7 +64,7 @@ export default defineConfig(({ mode }) => {
       deps: {
         inline: [
           '@vue',
-          'vue-demi',
+          // 'vue-demi',
         ],
       },
       coverage: {

@@ -1,6 +1,6 @@
 {
   "name": "vue-cool-box-selector",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "private": false,
   "description": "Fancy, versatile box, button, image selector for Vue 2 and 3",
   "author": "Hassan Jahan <hassan.jahan@gmail.com>",
@@ -54,19 +54,7 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "peerDependencies": {
-    "@vue/composition-api": "^1.7.1",
-    "vue": "^2.0.0 || >=3.0.0"
-  },
-  "peerDependenciesMeta": {
-    "@vue/composition-api": {
-      "optional": true
-    }
-  },
-  "dependencies": {
-    "execa": "^7.1.1",
-    "vue-demi": "0.13.*"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.5",
     "@types/node": "^18.11.9",
@@ -81,9 +69,7 @@
     "typescript": "^5.0.4",
     "vite": "^4.3.1",
     "vitest": "^0.30.1",
-    "vue": "npm:vue@^2.7.14",
-    "vue-2": "npm:vue@^2.7.14",
-    "vue-3": "npm:vue@^3.2.47",
+    "vue": "^2.7.14",
     "vue-tsc": "0.40.8"
   },
   "volta": {

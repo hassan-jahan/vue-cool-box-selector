@@ -1,5 +1,4 @@
 <script lang="ts">
-import {defineComponent} from 'vue-demi'
 
 // import HelloWorld from './helloWorld.vue'
 import {CoolBoxItem, VueCoolBoxSelector} from './../dist/'
@@ -22,7 +21,7 @@ import {CoolBoxItem, VueCoolBoxSelector} from './../dist/'
 // how to release: commit first / create a new tag (maybe from the commit in git log tab) push it with push tag all (you may need create first)
 // you acan laso create release from github simpler but not npm publish
 
-export default defineComponent({
+export default {
   name: 'App',
   components: {
     // HelloWorld,
@@ -37,7 +36,7 @@ export default defineComponent({
   // data:{
   //   selected: 'initialValue',
   // }
-})
+}
 </script>
 
 <template>
