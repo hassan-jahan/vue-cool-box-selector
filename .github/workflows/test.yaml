@@ -28,7 +28,11 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2.1.0
         with:
-          version: latest
+          version: 8
+          run_install: |
+            - recursive: true
+              args: [--frozen-lockfile, --strict-peer-dependencies]
+            - args: [--global, gulp, prettier, typescript]
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
