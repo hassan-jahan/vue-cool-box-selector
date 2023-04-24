@@ -1,6 +1,6 @@
 {
   "name": "vue-cool-box-selector",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "private": false,
   "description": "Fancy, versatile box, button, image selector for Vue 2 and 3",
   "author": "Hassan Jahan",
