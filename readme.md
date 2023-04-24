@@ -47,7 +47,7 @@ pnpm add vue-cool-box-selector
 import { CoolBoxItem, VueCoolBoxSelector } from 'vue-cool-box-selector'
 
 // Optional, you can use your own classes
-import 'vue-cool-box-selector/style.css'
+import 'vue-cool-box-selector/dist/style.css'
 
 // For Vue 2
 import Vue from 'vue'

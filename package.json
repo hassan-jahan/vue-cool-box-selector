@@ -1,6 +1,6 @@
 {
   "name": "vue-cool-box-selector",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "private": false,
   "description": "Fancy, versatile box, button, image selector for Vue 2 and 3",
   "author": "Hassan Jahan <hassan.jahan@gmail.com>",
@@ -65,7 +65,7 @@
   },
   "dependencies": {
     "execa": "^7.1.1",
-    "vue-demi": "latest"
+    "vue-demi": "0.13.*"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.5",

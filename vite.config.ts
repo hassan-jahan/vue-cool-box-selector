@@ -33,7 +33,7 @@ export default defineConfig(({ mode }) => {
                      * for externalized deps
                      */
           globals: {
-            'vue': 'Vue',
+            vue: 'Vue',
             // 'vue-demi': 'VueDemi',
           },
         },
