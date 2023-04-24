@@ -24,7 +24,7 @@ export default defineConfig(({ mode }) => {
                  */
         external: [
           'vue',
-          'vue-demi',
+          // 'vue-demi',
         ],
         output: {
           /**
@@ -34,7 +34,7 @@ export default defineConfig(({ mode }) => {
                      */
           globals: {
             'vue': 'Vue',
-            'vue-demi': 'VueDemi',
+            // 'vue-demi': 'VueDemi',
           },
         },
       },

@@ -1,5 +1,8 @@
 <script>
-import { isVue2 } from 'vue-demi'
+import {install, isVue2} from 'vue-demi'
+
+install()
+console.log('isVue2',isVue2)
 
 export default {
   name: 'VueCoolBoxSelector',

@@ -2,7 +2,7 @@
 import {defineComponent} from 'vue-demi'
 
 // import HelloWorld from './helloWorld.vue'
-import {CoolBoxItem, VueCoolBoxSelector} from './index'
+import {CoolBoxItem, VueCoolBoxSelector} from './../dist/'
 
 // import CoolBoxItem from './components/cool-box-item.vue'
 
