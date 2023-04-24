@@ -22,7 +22,7 @@
       "@/*": ["src/*"]
     },
     "allowJs": true,
-    "preserveSymlinks": true,
+//    "preserveSymlinks": true,
   },
   "include": [
     "src/**/*.ts",

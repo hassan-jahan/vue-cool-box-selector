@@ -38,16 +38,16 @@
     "dist"
   ],
   "scripts": {
-    "prepare": "pnpm lint:fix",
+    "prepare": "npm run lint:fix",
     "clean:dist": "rimraf dist",
     "clean:coverage": "rimraf coverage",
     "dev": "vite --mode dev",
-    "build": "pnpm clean:dist && vite build --mode prod && vue-tsc --emitDeclarationOnly",
-    "build-no-tsc": "pnpm clean:dist && vite build --mode prod",
+    "build": "npm run clean:dist && vite build --mode prod && vue-tsc --emitDeclarationOnly",
+    "build-no-tsc": "npm run clean:dist && vite build --mode prod",
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "pnpm clean:coverage && vitest --coverage --mode test"
+    "test": "npm run clean:coverage && vitest --coverage --mode test"
   },
   "config": {
     "commitizen": {
@@ -68,11 +68,12 @@
     "vue-demi": "latest"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.31.0",
+    "@antfu/eslint-config": "^0.38.5",
     "@types/node": "^18.11.9",
     "@vitejs/plugin-vue2": "^2.2.0",
     "@vitest/coverage-c8": "^0.25.2",
-    "eslint": "8.22.0",
+    "eslint": "^8.23.1",
+    "eslint-plugin-unicorn": "^46.0.0",
     "eslint-plugin-vue": "^9.11.0",
     "happy-dom": "^7.7.0",
     "rimraf": "^5.0.0",

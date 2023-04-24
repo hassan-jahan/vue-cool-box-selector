@@ -23,20 +23,20 @@ jobs:
         with:
           registry-url: https://registry.npmjs.org/
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
-          run_install: false
+#      - name: Install pnpm
+#        uses: pnpm/action-setup@v2
+#        with:
+#          version: 8
+#          run_install: false
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: pnpm
+#          cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Generate a new github release
         run: npx conventional-github-releaser -p angular
@@ -45,7 +45,7 @@ jobs:
           CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{ secrets.GIT_TOKEN }}
 
       - name: Build package
-        run: pnpm build
+        run: npm run build
 
       - name: Publish package
         run: npm publish --access public

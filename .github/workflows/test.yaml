@@ -32,13 +32,16 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
-      - uses: pnpm/action-setup@v2.2.4
-        with:
-          version: 8.x.x
-          run_install: true
+#      - uses: pnpm/action-setup@v2.2.4
+#        with:
+#          version: 8.x.x
+#          run_install: true
+
+      - name: Install dependencies
+        run: npm install
 
       - name: Test
-        run: pnpm test
+        run: npm run test
 
       - name: Upload code coverage
         uses: codecov/codecov-action@v3

@@ -13,6 +13,7 @@ module.exports = {
     'dist/',
     'coverage/',
     'pnpm-lock.yaml',
+    'package-lock.json',
     // '*.js'
   ],
   rules: {
