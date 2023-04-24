@@ -11,11 +11,15 @@ import {CoolBoxItem, VueCoolBoxSelector} from './index'
 
 // todo: read me with gifs and examples and emoji and vue 2 / vue 3 X
 // todo: gifs
-// todo: github hooks husky
-// todo: publish v1
-// todo: test with vue 2 vue 3
+// todo: github hooks husky X [removed]
+// todo: publish v1 X
+// todo: test with vue 2 vue 3 see vue-fluent (link in actions)
 // todo: multi select
+// todo: more cool badge for read me
 // todo: checkbox style
+
+// how to release: commit first / create a new tag (maybe from the commit in git log tab) push it with push tag all (you may need create first)
+// you acan laso create release from github simpler but not npm publish
 
 export default defineComponent({
   name: 'App',

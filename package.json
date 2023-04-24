@@ -1,9 +1,9 @@
 {
   "name": "vue-cool-box-selector",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "description": "Fancy, versatile box, button, image selector for Vue 2 and 3",
-  "author": "Hassan Jahan",
+  "author": "Hassan Jahan <hassan.jahan@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -16,6 +16,9 @@
     "box-select",
     "box-option",
     "choose-box",
+    "image-selector",
+    "checkbox",
+    "button-checkbox",
     "ui",
     "frontend",
     "vue"
@@ -61,6 +64,7 @@
     }
   },
   "dependencies": {
+    "execa": "^7.1.1",
     "vue-demi": "latest"
   },
   "devDependencies": {
@@ -71,11 +75,14 @@
     "eslint": "8.22.0",
     "eslint-plugin-vue": "^9.11.0",
     "happy-dom": "^7.7.0",
-    "rimraf": "^3.0.2",
-    "typescript": "^4.9.3",
-    "vite": "^3.2.4",
-    "vitest": "^0.25.2",
-    "vue": "2.7.14",
+    "rimraf": "^5.0.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.1",
+    "vitest": "^0.30.1",
+    "vue": "npm:vue@^2.7.14",
+    "vue-2": "npm:vue@^2.7.14",
+    "vue-3": "npm:vue@^3.2.47",
     "vue-tsc": "0.40.8"
   },
   "volta": {
