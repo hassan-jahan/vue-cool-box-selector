@@ -21,7 +21,8 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "allowJs": true
+    "allowJs": true,
+    "preserveSymlinks": true,
   },
   "include": [
     "src/**/*.ts",
