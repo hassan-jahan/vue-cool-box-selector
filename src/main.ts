@@ -1,14 +1,21 @@
-// import { createApp } from 'vue'
 import Vue from 'vue'
 import App from './app.vue'
 
-// createApp(App).mount('#app')
-Vue.config.productionTip = false
+// vue 3
+// import { createApp } from 'vue'
 
-// to change to vue3 install these and remove vue 2 also change this file and use vue-demi. This is demo
+// vue 2
+
+// vue2:
 // "vue": "2.7.14",
-// "@vitejs/plugin-vue": "^3.2.0",
+// "@vitejs/plugin-vue2": "^2.2",
+// also update vite.config
 
+// vue 2
+Vue.config.productionTip = false
 new Vue({
   render: h => h(App),
 }).$mount('#app')
+
+// vue 3
+// createApp(App).mount('#app')

@@ -1,10 +1,9 @@
 <script lang="ts">
-
 // import HelloWorld from './helloWorld.vue'
-// import {CoolBoxItem, VueCoolBoxSelector} from './../dist/'
-import {CoolBoxItem, VueCoolBoxSelector} from './index'
+import {CoolBoxItem, VueCoolBoxSelector} from './../dist/'
 
-// import CoolBoxItem from './components/cool-box-item.vue'
+// import {CoolBoxItem, VueCoolBoxSelector} from './index'
+import 'vue-cool-box-selector/dist/style.css'
 
 // todo: fully vue 2 test X
 // todo: grid cooler samples X
@@ -20,7 +19,7 @@ import {CoolBoxItem, VueCoolBoxSelector} from './index'
 // todo: checkbox style
 
 // how to release: commit first / create a new tag (maybe from the commit in git log tab) push it with push tag all (you may need create first)
-// you acan laso create release from github simpler but not npm publish
+// you can also create release from github simpler but not npm publish
 
 export default {
   name: 'App',
