@@ -1,6 +1,6 @@
 {
   "name": "vue-cool-box-selector",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "private": false,
   "description": "Fancy, versatile box, button, image selector for Vue 2 and 3",
   "author": "Hassan Jahan <hassan.jahan@gmail.com>",
@@ -27,7 +27,8 @@
     ".": {
       "require": "./dist/index.umd.js",
       "import": "./dist/index.mjs"
-    }
+    },
+    "./dist/style.css": "./dist/style.css"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

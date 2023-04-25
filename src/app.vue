@@ -1,7 +1,8 @@
 <script lang="ts">
 
 // import HelloWorld from './helloWorld.vue'
-import {CoolBoxItem, VueCoolBoxSelector} from './../dist/'
+// import {CoolBoxItem, VueCoolBoxSelector} from './../dist/'
+import {CoolBoxItem, VueCoolBoxSelector} from './index'
 
 // import CoolBoxItem from './components/cool-box-item.vue'
 
