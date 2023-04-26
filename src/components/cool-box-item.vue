@@ -46,7 +46,7 @@ export default {
   border-radius: .4rem;
   cursor: pointer;
   border: 2px solid #ccc;
-  padding: 10px;
+  padding: 12px;
   margin: 3px;
 }
 
@@ -103,11 +103,11 @@ export default {
 }
 
 /* Change vue-cool-box-selector color. e.g. var(--bs-primary) */
-.cb__active, .cb__triangle:before{
-  border-color: deeppink ;
-}
-.cb__square:after, .cb__circle:after, .cb__triangle:after {
-  background-color: deeppink;
-}
+/*.cb__active, .cb__triangle:before{*/
+/*  border-color: deeppink ;*/
+/*}*/
+/*.cb__square:after, .cb__circle:after, .cb__triangle:after {*/
+/*  background-color: deeppink;*/
+/*}*/
 
 </style>
