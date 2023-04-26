@@ -65,7 +65,7 @@ app.use(VueCoolBoxSelector)
 
 <div>
   Selected box: {{ selected }}
-  <VueCoolBoxSelector v-model="selected" active-class="vue-cool-box-selector__active">
+  <VueCoolBoxSelector v-model="selected" active-class="cb__active">
     <CoolBoxItem name="Item1" class="vue-cool-box-selector__item" key="1">
       Item Box 1
     </CoolBoxItem>
@@ -81,12 +81,15 @@ app.use(VueCoolBoxSelector)
 ## Props
 
 - VueCoolBoxSelector 
-  - active-class (String): Will be added when the box was selected
+  - active-class (String): Will be added to the item if it is selected. Provided styles: cb__active, cb__active-square, cb__active-circle, cb__active-triangle** 
   - tag (String) (Default: 'div')
 
 - CoolBoxItem
   - name (String) (Required)
   - tag (String) (Default: 'div')
+  - class (String): Suggested: vue-cool-box-selector__item 
+
+** Note that provided active classes require vue-cool-box-selector__item for items to work correctly.
 
 [//]: # (## Cheers me on)
 

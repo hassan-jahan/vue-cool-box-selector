@@ -13,7 +13,14 @@ export default {
       default: 'div',
     },
   },
-
+  watch: {
+    value(newVal){
+      this.selected = newVal
+    },
+    modelValue(newVal){
+      this.selected = newVal
+    }
+  },
   data() {
     return {
       selected: '',
