@@ -50,14 +50,14 @@ export default {
   margin: 3px;
 }
 
-.cb__active, .cb__active-square, .cb__active-circle, .cb__active-triangle {
+.cb__active {
   border: 2px solid #2c3ab6;
   /*box-shadow: inset 0 0 3px #bbb;*/
 }
 
 
 /* Tick part */
-.cb__active-square:after, .cb__active-circle:after, .cb__active-triangle:after {
+.cb__square:after, .cb__circle:after, .cb__triangle:after {
   content: "";
   position: absolute;
   right: 3px;
@@ -70,22 +70,22 @@ export default {
 }
 
 
-.cb__active-circle:after {
+.cb__circle:after {
   border-radius: 50%;
 }
 
-.cb__active-square:after {
+.cb__square:after {
   border-radius: 3px;
 }
 
 /* Tick size*/
-.cb__active-triangle:after {
+.cb__triangle:after {
   width: 12px;
   height: 12px;
 }
 
 /* Triangle itself */
-.cb__active-triangle:before {
+.cb__triangle:before {
   content: "";
   position: absolute;
   height: 0;
@@ -102,12 +102,12 @@ export default {
   border-top-right-radius: inherit;
 }
 
-
-.cb__active, .cb__active-square, .cb__active-circle,.cb__active-triangle, .cb__active-triangle:before{
-  border-color: red ;
+/* Change vue-cool-box-selector color. e.g. var(--bs-primary) */
+.cb__active, .cb__triangle:before{
+  border-color: deeppink ;
 }
- .cb__active-square:after, .cb__active-circle:after, .cb__active-triangle:after {
-  background-color: red;
+.cb__square:after, .cb__circle:after, .cb__triangle:after {
+  background-color: deeppink;
 }
 
 </style>

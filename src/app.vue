@@ -55,7 +55,7 @@ export default {
 
     <div style="margin-top:20px;"></div>
 
-    <VueCoolBoxSelector v-model="selected" active-class="cb__active-square">
+    <VueCoolBoxSelector v-model="selected" active-class="cb__active cb__square">
       <CoolBoxItem key="1" name="Item1" class="vue-cool-box-selector__item px-3" style="width:48px;text-align:center">
         <img src="/img.svg" alt=""/>
         <small>Img1</small>

@@ -81,15 +81,30 @@ app.use(VueCoolBoxSelector)
 ## Props
 
 - VueCoolBoxSelector 
-  - active-class (String): Will be added to the item if it is selected. Provided styles: cb__active, cb__active-square, cb__active-circle, cb__active-triangle** 
+  - active-class (String): Will be added to the item if it is selected. 
   - tag (String) (Default: 'div')
 
 - CoolBoxItem
   - name (String) (Required)
   - tag (String) (Default: 'div')
-  - class (String): Suggested: vue-cool-box-selector__item 
 
-** Note that provided active classes require vue-cool-box-selector__item for items to work correctly.
+
+## Style
+VueCoolBoxSelector class: vue-cool-box-selector__item (require if you want to use active classes)
+CoolBoxItem active-class: cb__active | cb__active,cb__active-square | cb__active,cb__circle | cb__active,cb__triangle
+
+## Change style color
+```css
+/* Change vue-cool-box-selector color */
+/* var(--bs-primary) */
+.cb__active, .cb__triangle:before{
+border-color: violet ; /* maybe var(--bs-primary) */
+}
+.cb__square:after, .cb__circle:after, .cb__triangle:after {
+background-color: violet; /* maybe var(--bs-primary) */
+}
+```
+[//]: # (** Note that provided active classes require vue-cool-box-selector__item or position:relative for items to work correctly.)
 
 [//]: # (## Cheers me on)
 
