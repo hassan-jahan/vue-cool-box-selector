@@ -1,12 +1,17 @@
 <script lang="ts">
 // import {CoolBoxItem, VueCoolBoxSelector} from './../dist/'
-import {CoolBoxItem, VueCoolBoxSelector} from './index'
+// import {CoolBoxItem, VueCoolBoxSelector} from './index'
+import Vue from 'vue'
+import VueCoolBox from './index'
+
+Vue.use(VueCoolBox)
+
 // import 'vue-cool-box-selector/dist/style.css'
 
 // todo: fully vue 2 test X
 // todo: grid cooler samples X
 // todo: export component to index.js X
-
+//todo: export plug and autoinstall X
 // todo: read me with gifs and examples and emoji and vue 2 / vue 3 X
 // todo: gifs
 // todo: github hooks husky X [removed]
@@ -22,9 +27,8 @@ import {CoolBoxItem, VueCoolBoxSelector} from './index'
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
-    VueCoolBoxSelector,
-    CoolBoxItem,
+    // VueCoolBoxSelector,
+    // CoolBoxItem,
   },
   data() {
     return {
