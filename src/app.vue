@@ -11,7 +11,7 @@ Vue.use(VueCoolBox)
 // todo: fully vue 2 test X
 // todo: grid cooler samples X
 // todo: export component to index.js X
-//todo: export plug and autoinstall X
+// todo: export plug and autoinstall X
 // todo: read me with gifs and examples and emoji and vue 2 / vue 3 X
 // todo: gifs
 // todo: github hooks husky X [removed]
@@ -47,7 +47,6 @@ export default {
     <VueCoolBoxSelector v-model="selected" active-class="cb__active">
       <CoolBoxItem key="1" name="Item1" class="vue-cool-box-selector__item">
         Item Box 1
-
       </CoolBoxItem>
       <CoolBoxItem key="2" name="Item2" class="vue-cool-box-selector__item">
         Item Box 2
@@ -57,34 +56,34 @@ export default {
       </CoolBoxItem>
     </VueCoolBoxSelector>
 
-    <div style="margin-top:20px;"></div>
+    <div style="margin-top:20px;" />
 
     <VueCoolBoxSelector v-model="selected" active-class="cb__active cb__circle">
       <CoolBoxItem key="1" name="Item1" class="vue-cool-box-selector__item px-3" style="width:48px;text-align:center">
-        <img src="/img.svg" alt=""/>
+        <img src="/img.svg" alt="">
         <small>Img1</small>
       </CoolBoxItem>
       <CoolBoxItem key="2" name="Item2" class="vue-cool-box-selector__item px-3" style="width:48px;text-align:center">
-        <img src="/img2.svg" alt=""/>
+        <img src="/img2.svg" alt="">
         <small>Img2</small>
       </CoolBoxItem>
     </VueCoolBoxSelector>
 
-    <div style="margin-top:20px;"></div>
+    <div style="margin-top:20px;" />
 
     <VueCoolBoxSelector v-model="selected" active-class="cb__active cb__triangle">
       <CoolBoxItem key="1" name="Item1" class="vue-cool-box-selector__item px-3" style="width:38px;">
-        <img src="/img.svg" alt=""/>
+        <img src="/img.svg" alt="">
       </CoolBoxItem>
       <CoolBoxItem key="2" name="Item2" class="vue-cool-box-selector__item px-3" style="width:38px;">
-        <img src="/img2.svg" alt=""/>
+        <img src="/img2.svg" alt="">
       </CoolBoxItem>
     </VueCoolBoxSelector>
 
-    <div style="margin-top:20px;"></div>
+    <div style="margin-top:20px;" />
 
     <VueCoolBoxSelector v-model="selected" active-class="cb__active cb__square">
-      <CoolBoxItem key="1" name="Item1" class="vue-cool-box-selector__item small" style="padding-right:18px;padding-left:18px;" >
+      <CoolBoxItem key="1" name="Item1" class="vue-cool-box-selector__item small" style="padding-right:18px;padding-left:18px;">
         One
       </CoolBoxItem>
       <CoolBoxItem key="2" name="Item2" class="vue-cool-box-selector__item small" style="padding-right:18px;padding-left:18px;">

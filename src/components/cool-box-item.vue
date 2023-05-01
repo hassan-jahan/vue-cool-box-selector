@@ -33,13 +33,11 @@ export default {
 
 <template>
   <component :is="tag" :class="$parent.selected === name ? $parent.activeClass : ''" @click="$parent.Select(name)">
-    <slot/>
+    <slot />
   </component>
 </template>
 
 <style>
-
-
 .vue-cool-box-selector__item {
   position: relative;
   display: inline-block;
@@ -55,7 +53,6 @@ export default {
   /*box-shadow: inset 0 0 3px #bbb;*/
 }
 
-
 /* Tick part */
 .cb__square:after, .cb__circle:after, .cb__triangle:after {
   content: "";
@@ -68,7 +65,6 @@ export default {
   background-size: 14px;
   z-index: 999;
 }
-
 
 .cb__circle:after {
   border-radius: 50%;
@@ -109,5 +105,4 @@ export default {
 /*.cb__square:after, .cb__circle:after, .cb__triangle:after {*/
 /*  background-color: deeppink;*/
 /*}*/
-
 </style>

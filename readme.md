@@ -62,22 +62,19 @@ app.use(VueCoolBoxSelector)
 ### Local Use
 
 ```js
-import {CoolBoxItem, VueCoolBoxSelector} from 'vue-cool-box-selector'
+import { CoolBoxItem, VueCoolBoxSelector } from 'vue-cool-box-selector'
 
-{
-//Inside Component
-    components: {
-         VueCoolBoxSelector,
-         CoolBoxItem,
-    },
+const component = {
+  components: {
+    VueCoolBoxSelector,
+    CoolBoxItem,
+  },
 }
-
 ```
 
 ### Basic Usage
 
 ```vue
-
 <div>
 Selected box: {{ selected }}
 <VueCoolBoxSelector v-model="selected" active-class="cb__active">

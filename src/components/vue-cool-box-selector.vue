@@ -13,18 +13,18 @@ export default {
       default: 'div',
     },
   },
-  watch: {
-    value(newVal){
-      this.selected = newVal
-    },
-    modelValue(newVal){
-      this.selected = newVal
-    }
-  },
   data() {
     return {
       selected: '',
     }
+  },
+  watch: {
+    value(newVal) {
+      this.selected = newVal
+    },
+    modelValue(newVal) {
+      this.selected = newVal
+    },
   },
   created() {
     this.selected = this.value ? this.value : this.modelValue
