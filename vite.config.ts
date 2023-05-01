@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => {
   if (isProd) {
     build = {
       lib: {
-        entry: resolve(__dirname, 'src/index.ts'),
+        entry: resolve(__dirname, 'src/index.js'),
         name: 'vue-cool-box-selector',
         fileName: 'index',
         formats: ['es', 'cjs', 'umd'],

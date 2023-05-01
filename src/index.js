@@ -1,12 +1,12 @@
 import VueCoolBoxSelector from './components/vue-cool-box-selector.vue'
 import CoolBoxItem from './components/cool-box-item.vue'
 
-
+let installed = false
 // Declare install function executed by Vue.use()
 function install(Vue, opts={}) {
     // Don't install more than once
-    if (install.installed) return;
-    install.installed = true;
+    if (installed) return;
+    installed = true;
 
     Vue.component('VueCoolBoxSelector', VueCoolBoxSelector);
     Vue.component('CoolBoxItem', CoolBoxItem);
