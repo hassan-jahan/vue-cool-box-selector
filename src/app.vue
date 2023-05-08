@@ -1,10 +1,11 @@
 <script lang="ts">
 // import {CoolBoxItem, VueCoolBoxSelector} from './../dist/'
-// import {CoolBoxItem, VueCoolBoxSelector} from './index'
-import Vue from 'vue'
-import VueCoolBox from './index'
+// import { CoolBoxItem, VueCoolBoxSelector } from './index'
 
-Vue.use(VueCoolBox)
+// import VueCoolBox from './index'
+
+// import Vue from 'vue' // vue 2
+// Vue.use(VueCoolBox)  // vue 2
 
 // import 'vue-cool-box-selector/dist/style.css'
 
@@ -13,7 +14,7 @@ Vue.use(VueCoolBox)
 // todo: export component to index.js X
 // todo: export plug and autoinstall X
 // todo: read me with gifs and examples and emoji and vue 2 / vue 3 X
-// todo: gifs
+// todo: gifs X
 // todo: github hooks husky X [removed]
 // todo: publish v1 X
 // todo: test with vue 2 vue 3 see vue-fluent (link in actions) X

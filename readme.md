@@ -41,6 +41,7 @@ yarn add vue-cool-box-selector
 ##OR
 pnpm i vue-cool-box-selector
 ```
+**Note:** Use version 2 for Vue 2 
 
 ### Global Use
 
