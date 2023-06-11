@@ -125,7 +125,7 @@ Selected box: {{ selected }}
         - Require if you want to use below classes
 - CoolBoxItem active-class:
     - cb__active
-    - cb__active, cb__active-square
+    - cb__active, cb__square
     - cb__active, cb__circle
     - cb__active, cb__triangle
 
@@ -146,7 +146,7 @@ Selected box: {{ selected }}
 
 ## Cheers
 
-Love my works? give me 🌟 or follow for more works! → [Follow me on Github](https://github.com/sponsors/hassan-jahan)
+Love my works? give me 🌟 or follow for more works! → [Follow me on Github](https://github.com/hassan-jahan)
 
 
 [//]: # (Your support means a lot to me. It will help me sustain my projects actively and make more of my ideas come true. <br>)
