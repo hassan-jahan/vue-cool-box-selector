@@ -157,7 +157,7 @@ Love my works? give me 🌟 or follow for more works! → [Follow me on Github](
 
 ## Requirement
 
-- node.js  > 14
+- node.js  > 16
 
 ## Thanks
 
