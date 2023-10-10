@@ -162,7 +162,6 @@ Love my works? give me 🌟 or follow for more works! → [Follow me on Github](
 ## Thanks
 
 - Faizal Andyka for vivu-npm
-- Anthony Fu for vue-demi
 
 ## License
 
