@@ -1,6 +1,6 @@
 {
   "name": "vue-cool-box-selector",
-  "version": "3.0.5",
+  "version": "4.0.0",
   "private": false,
   "description": "Fancy, versatile box, button, image selector for Vue 2 and 3",
   "author": "Hassan Jahan <hassan.jahan@gmail.com>",
@@ -23,21 +23,10 @@
     "frontend",
     "vue"
   ],
-  "exports": {
-    ".": {
-      "require": "./dist/index.umd.js",
-      "import": "./dist/index.mjs"
-    },
-    "./dist/style.css": "./dist/style.css"
-  },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "unpkg": "./dist/index.umd.js",
-  "jsdelivr": "./dist/index.umd.js",
-  "types": "./dist/types/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "types/index.d.ts",
+  "files": ["dist", "types"],
   "scripts": {
     "prepare": "npm run lint:fix",
     "clean:dist": "rimraf dist",
@@ -76,5 +65,6 @@
   },
   "volta": {
     "node": "14.19.1"
-  }
+  },
+  "packageManager": "pnpm@8.9.0+sha1.01c55344d677f3b481c6bb6ffba9a6b3c6dbd91d"
 }

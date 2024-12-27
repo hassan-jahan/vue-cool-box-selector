@@ -1,7 +1,7 @@
 // import Vue from 'vue'
 import {createApp} from 'vue'
 import App from './app.vue'
-import VueCoolBox from '@/index'
+import VueCoolBox from './index'
 
 // vue 3
 
@@ -19,5 +19,5 @@ import VueCoolBox from '@/index'
 // }).$mount('#app')
 
 createApp(App)
-  .use(VueCoolBox, {})
+  .use(VueCoolBox)
   .mount('#app') // // vue 3 mount should be last
